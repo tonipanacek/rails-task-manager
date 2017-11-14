@@ -1,7 +1,7 @@
-<h1>My To-Do List:</h1>
+<h1>Shit I Gotta Do:</h1>
 <ul>
 <% @tasks.each do |t| %>
-  <li><%= t.name %> : <%= t.description %>(<%= link_to 'More deets', task_path(t) %>)(<%= link_to 'Edit', edit_task_path(t) %>)(<%= link_to 'Delete', task_path(t), method: :delete %>)</li>
+  <li><%= t.name %> : <%= t.description %><br>(<%= link_to 'More deets', task_path(t) %>)(<%= link_to 'Edit', edit_task_path(t) %>)(<%= link_to 'Delete', task_path(t), method: :delete %>)</li></br>
   <% end %>
 </ul>
 <%= link_to 'Add another thing', new_task_path %>
